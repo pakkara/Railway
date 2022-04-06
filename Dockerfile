@@ -1,4 +1,5 @@
 FROM ubuntu
 RUN apt update
-RUN  sudo wget https://raw.githubusercontent.com/iamtrazy/rezoth-ssh/main/ssh.sh && sudo chmod +x ssh.sh  && sudo ./ssh.sh 
-RUN  menu
+RUN  sudo apt-get install curl
+RUN curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash
+RUN sudo apt-get install speedtest
