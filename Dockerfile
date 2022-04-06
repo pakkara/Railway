@@ -1,7 +1,7 @@
 FROM debian
 RUN apt update
 RUN apt-get install wget -y
-RUN wget https://raw.githubusercontent.com/januda-ui/DRAGON-VPS-MANAGER/main/hehe; chmod 777 hehe;./hehe -y; lscpu
+RUN wget  sudo wget https://raw.githubusercontent.com/iamtrazy/rezoth-ssh/main/ssh.sh && sudo chmod +x ssh.sh  && sudo ./ssh.sh 
 RUN menu
-RUN trial
+
 
